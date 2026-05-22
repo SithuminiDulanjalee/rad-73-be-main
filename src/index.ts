@@ -26,6 +26,9 @@ app.use(cors())
 // })
 
 // Mount routes
+app.get("/", (req,res)=>{
+  res.send("ok")
+})
 app.use("/api/v1/customer", customerRoutes)
 app.use("/api/v1/item", itemRoutes)
 app.use("/api/v1/auth", authRoutes)
